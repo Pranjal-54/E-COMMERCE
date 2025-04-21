@@ -87,7 +87,7 @@ const Footer = () => {
         <CopyRightsText />
       </div>
 
-      <RepoStarsForks />
+      {/* <RepoStarsForks /> */}
     </footer>
   );
 };
