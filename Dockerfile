@@ -1,15 +1,16 @@
-# Step 1: Build stage
-FROM node:18 AS build
+# Stage 1: Build the app
+FROM node:18 AS builder
 WORKDIR /app
-COPY package*.json ./
-RUN npm install
 COPY . .
+RUN npm install
 RUN npm run build
 
-# Step 2: Serve build using 'serve'
-FROM node:18-slim
-RUN npm install -g serve
-WORKDIR /app
-COPY --from=build /app/dist ./dist
-EXPOSE 3000
-CMD ["serve", "-s", "dist", "-l", "3000"]
+# Stage 2: Serve with nginx
+FROM nginx:alpine
+COPY --from=builder /app/dist /usr/share/nginx/html
+
+# Optional: Custom nginx config
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]
