@@ -5,7 +5,7 @@
 <h1 align="center">E-Commerce Website</h1>
 
 <p align="center">
-  Designed by: <a href="https://github.com/Pranjal-54" target="_blank">Pranjal</a>, 
+  Designed by: <a href="https://github.com/Pranjal-54" target="_blank">Pranjal Thakur</a>, 
   Design on <a href="https://www.figma.com/file/bwhp2Q5jdzJDIw5YIsBlXe/Full-E-Commerce-Website-UI-UX-Design-(Community)?node-id=34%3A213&mode=design" target="_blank">Figma</a>
 </p>
 
@@ -14,7 +14,7 @@
 **1. Clone the repository:**
 
 ```bash
-git clone git@github.com:Moamal-2000/e-commerce.git
+git clone git@https://github.com/Pranjal-54/E-commerce.git
 ```
 
 **2. Install dependencies:**
@@ -33,7 +33,7 @@ npm run dev
 
 You are welcome to use and modify the codebase for personal and educational purposes. However, please respect the original designer's work and do not use this project for commercial purposes without appropriate permissions.
 
-© 2024 Moamal Alaa Kareem | All rights reserved.
+© 2024 Pranjal Thakur | All rights reserved.
 
 ## 3. Technologies Used
 
